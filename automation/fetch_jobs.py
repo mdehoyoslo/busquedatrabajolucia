@@ -17,16 +17,8 @@ import urllib.request
 
 API='https://api.adzuna.com/v1/api/jobs/es/search/1'
 # 7 hubs / 4 targeted queries = 28 calls/day (adjust for your API plan).
-#CITIES=['Madrid','Guadalajara','Toledo','Segovia','Ávila','Valladolid','Cuenca']
-#QUERIES=['tecnico calidad alimentaria','seguridad alimentaria','auditor alimentaria','APPCC']
-
-# Primera prueba: máximo 4 consultas a Adzuna
-CITIES = ['Madrid', 'Guadalajara']
-
-QUERIES = [
-    'tecnico calidad alimentaria',
-    'seguridad alimentaria'
-]
+CITIES=['Madrid','Guadalajara','Toledo','Segovia','Ávila','Valladolid','Cuenca']
+QUERIES=['tecnico calidad alimentaria','seguridad alimentaria','auditor alimentaria','APPCC']
 
 MAX_RESULTS=25
 # Approximate geographic shortlist. Never claim that a city is within an exact driving-time bound.
