@@ -1,6 +1,9 @@
 name: Buscar ofertas de empleo
 
 on:
+  schedule:
+    - cron: '17 8 * * *'
+      timezone: 'Europe/Madrid'
   workflow_dispatch:
 
 permissions:
